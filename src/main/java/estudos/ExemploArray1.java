@@ -1,7 +1,7 @@
 package estudos;
 
 /**
- * Created by ton on 8/26/14.
+ * Exemplo de array, com redimencionamento.
  */
 public class ExemploArray1 {
 
