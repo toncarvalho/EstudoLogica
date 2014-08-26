@@ -17,4 +17,12 @@ public class TestSimplesVetorNumerico {
         vetorNumerico.carregaMemoria();
         vetorNumerico.qualOMenorNumero();
     }
+
+    @Test
+    public void testeExisteOnumero() {
+//sabemos que o numero menor  e o 3
+        SimplesVetorNumerico vetorNumerico = new SimplesVetorNumerico();
+        vetorNumerico.carregaMemoria();
+        vetorNumerico.existeONumero(5);
+    }
 }
