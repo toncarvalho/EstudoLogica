@@ -1,4 +1,4 @@
-import estudos.ExemploArray1;
+import estudos.vetores.ExemploVetor;
 import org.junit.Test;
 
 /**
@@ -9,7 +9,7 @@ public class TesteExemploArray1 {
     @Test
     public void testExemplo1(){
 
-        ExemploArray1 exemploArray1 = new ExemploArray1();
+        ExemploVetor exemploArray1 = new ExemploVetor();
 
         exemploArray1.addProximo("Joselito");
         exemploArray1.addProximo("Marocs");

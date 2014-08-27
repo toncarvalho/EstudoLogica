@@ -1,4 +1,4 @@
-package estudos;
+package estudos.vetores;
 
 /**
  * Classe que exemplifica o uso de um simples vetor, ou arranjo de inteiros. Lembrando que arranjos sao sempre estruturas de dados de tipos

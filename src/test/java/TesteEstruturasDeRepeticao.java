@@ -1,16 +1,37 @@
-import estudos.estruturasderepeticao.ExemploFacaEnquanto;
+import estudos.estruturasderepeticao.ExemplosRepeticoes;
 import org.junit.Test;
 
-/**
- * Created by ton on 8/27/14.
- */
 public class TesteEstruturasDeRepeticao {
 
     @Test
     public void testFacaEnquanto() {
 
-        ExemploFacaEnquanto faca = new ExemploFacaEnquanto();
+        ExemplosRepeticoes faca = new ExemplosRepeticoes();
 
-        faca.exemplo();
+        faca.facaEnquanto();
+    }
+
+    @Test
+    public void testEnquantoFaca() {
+
+        ExemplosRepeticoes objeto = new ExemplosRepeticoes();
+
+        objeto.enquantoFaca();
+    }
+
+    @Test
+    public void testPara() {
+
+        ExemplosRepeticoes objeto = new ExemplosRepeticoes();
+
+        objeto.para();
+    }
+
+    @Test
+    public void testContagemRegressiva() {
+
+        ExemplosRepeticoes objeto = new ExemplosRepeticoes();
+
+        objeto.contagemRegressiva();
     }
 }

@@ -1,5 +1,8 @@
-package estudos;
+package estudos.ordenacao;
 
+/**
+ * Exemplo de ordenação por troca, bubble sort.
+ */
 public class ExemploOrdenacaoSimplesNValores {
 
     private int[] vetor;
@@ -17,7 +20,7 @@ public class ExemploOrdenacaoSimplesNValores {
     }
 
     /**
-     * exemplo de método simples de ordenacao
+     * Algorítmo de bubble sort ( ordenação por bolhas ou ordenação por troca )
      */
     public void ordenaVetor() {
         int temp = 0;
