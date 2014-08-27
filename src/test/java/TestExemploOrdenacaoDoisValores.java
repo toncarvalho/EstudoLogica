@@ -1,4 +1,4 @@
-import estudos.ExemploOrdenacaoSimplesDoisValores;
+import estudos.ordenacao.ExemploOrdenacaoSimplesDoisValores;
 import org.junit.Test;
 
 /**

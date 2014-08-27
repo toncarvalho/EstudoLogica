@@ -1,4 +1,4 @@
-import estudos.SimplesVetorNumerico;
+import estudos.vetores.SimplesVetorNumerico;
 import org.junit.Test;
 
 public class TestSimplesVetorNumerico {

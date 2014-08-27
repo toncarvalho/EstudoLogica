@@ -1,9 +1,9 @@
-package estudos;
+package estudos.vetores;
 
 /**
  * Exemplo de array, com redimencionamento.
  */
-public class ExemploArray1 {
+public class ExemploVetor {
 
     private String[] meuArray = null;
 

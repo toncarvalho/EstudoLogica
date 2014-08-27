@@ -1,9 +1,9 @@
-package estudos;
+package estudos.vetores;
 
 /**
  * Uso de Arrays como tabelas de dados em memoria
  */
-public class ExemploArrayTabelaEmMemoria {
+public class ExemploMatriz {
 
     /**
      * Imagine uma linha de registro( Tupla) com os campos nome, endereco e email, como conter estes dados em memoria?

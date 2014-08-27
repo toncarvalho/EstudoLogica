@@ -1,4 +1,4 @@
-import estudos.ExemploOrdenacaoSimplesNValores;
+import estudos.ordenacao.ExemploOrdenacaoSimplesNValores;
 import org.junit.Test;
 
 public class TestExemploOrdenacaoNValores {

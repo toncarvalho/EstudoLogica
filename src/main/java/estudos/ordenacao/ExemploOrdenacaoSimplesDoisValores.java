@@ -1,4 +1,4 @@
-package estudos;
+package estudos.ordenacao;
 
 
 public class ExemploOrdenacaoSimplesDoisValores {
@@ -24,7 +24,7 @@ public class ExemploOrdenacaoSimplesDoisValores {
     }
 
     /**
-     * exemplo de método simples de ordenacao
+     *Ordenação por troca.
      */
     public void imprimeEmOrdemCrescente() {
 
