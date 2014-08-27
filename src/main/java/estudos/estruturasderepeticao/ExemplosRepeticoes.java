@@ -27,9 +27,9 @@ public class ExemplosRepeticoes {
     }
 
     public void contagemRegressiva() {
-        for (int contador = 5; contador > 0; contador--) {
+        for (int i = 5; i > 0; i--) {
 
-            System.out.println(" contador: " + contador);
+            System.out.println(" contador: " + i);
         }
     }
 }
