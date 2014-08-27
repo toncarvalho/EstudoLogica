@@ -20,16 +20,16 @@ public class ExemplosRepeticoes {
     }
 
     public void para() {
-        for (int i = 0; i < 5; i++) {
+        for (int contador = 0; contador < 5; contador++) {
 
-            System.out.println(" contador: " + i);
+            System.out.println(" contador: " + contador);
         }
     }
 
     public void contagemRegressiva() {
-        for (int i = 5; i > 0; i--) {
+        for (int contador = 5; contador > 0; contador--) {
 
-            System.out.println(" contador: " + i);
+            System.out.println(" contador: " + contador);
         }
     }
 }
