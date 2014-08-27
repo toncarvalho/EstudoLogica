@@ -1,9 +1,6 @@
 import estudos.ExemploOrdenacaoSimplesNValores;
 import org.junit.Test;
 
-/**
- * Created by ton on 8/26/14.
- */
 public class TestExemploOrdenacaoNValores {
 
     @Test
@@ -13,4 +10,6 @@ public class TestExemploOrdenacaoNValores {
         vetorNumerico.ordenaVetor();
         vetorNumerico.imprimeVetor();
     }
+
+
 }

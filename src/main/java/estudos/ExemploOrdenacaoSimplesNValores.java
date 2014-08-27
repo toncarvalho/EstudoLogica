@@ -2,7 +2,6 @@ package estudos;
 
 public class ExemploOrdenacaoSimplesNValores {
 
-    private int qtdItensNoVetor = 0;
     private int[] vetor;
 
     /**
@@ -13,33 +12,41 @@ public class ExemploOrdenacaoSimplesNValores {
         /**
          * instanciando, inicializando o vetor com um tamanho fixo
          */
-        vetor = new int[]{50, 40, 30, 20, 10};
-        qtdItensNoVetor = vetor.length;
+        //vetor = new int[]{50, 40, 30, 20, 10, 99, 88, 65, 43, 4596, 989, 33, 956, 5, 5, 5, 54, 56, 456, 416, 1,};
+        vetor = new int[]{50, 40, 30};
     }
 
     /**
      * exemplo de método simples de ordenacao
      */
     public void ordenaVetor() {
-
         int temp = 0;
-        for (int i = 0; i < qtdItensNoVetor - 1; i++) {
-            int n = vetor[i];
-            int proximo = vetor[i + 1];
-            if (n > proximo) {
-                temp = proximo;
-                vetor[i + 1] = n;
-                vetor[i] = temp;
-            }
+        int comparacoes = 0;
+
+        for (int count = 0; count < vetor.length; count++) {
+            int i = 0;
+            do {
+                System.out.println("Comparando: " + (vetor[i]) + " com : " + (vetor[i + 1]));
+                comparacoes++;
+                if ((vetor[i]) > (vetor[i + 1])) {
+                    System.out.println("O valor: " + (vetor[i]) + " E MAIOR QUE O valor: " + (vetor[i + 1]));
+                    temp = vetor[i + 1];
+                    vetor[i + 1] = vetor[i];
+                    vetor[i] = temp;
+                }
+                i++;
+            } while (i < (vetor.length - 1));
         }
+
+        System.out.println(" executou: " + comparacoes + " comparações");
     }
 
     public void imprimeVetor() {
-        System.out.println(" Dados no vetor: ");
-        for (int j = 0; j < qtdItensNoVetor; j++) {
+        System.out.println(vetor.length + " Valores no vetor: ");
+        for (int j = 0; j < vetor.length; j++) {
             System.out.print(vetor[j]);
 
-            if (j < qtdItensNoVetor - 1) {
+            if (j < vetor.length - 1) {
                 System.out.print("-");
             }
         }
