@@ -20,9 +20,9 @@ public class ExemplosRepeticoes {
     }
 
     public void para() {
-        for (int contador = 0; contador < 5; contador++) {
+        for (int i = 0; i < 5; i++) {
 
-            System.out.println(" contador: " + contador);
+            System.out.println(" contador: " + i);
         }
     }
 
