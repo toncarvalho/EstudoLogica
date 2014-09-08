@@ -9,6 +9,7 @@ public class ExemploMatriz {
 
     private double[][] matriz = new double[LINHAS][COLUNAS];
 
+
     /**
      * Imagine uma linha de registro( Tupla) com os campos nome, endereco e email, como conter estes dados em memoria? -> o campo nome pode
      * contem ate 10 caracteres, o endereco 15 e o email tambem 15.
@@ -28,6 +29,8 @@ public class ExemploMatriz {
         matriz[1][0] = 2;
         //nota 89
         matriz[1][1] = 58;
+
+
     }
 
     public void imprime() {
@@ -36,6 +39,20 @@ public class ExemploMatriz {
             for (int coluna = 0; coluna < COLUNAS; coluna++) {
                 System.out.println("Aluno: " + matriz[linha][coluna]);
             }
+        }
+    }
+
+    public void imprime2() {
+
+        for (int i = 0; i < LINHAS; i++) {
+
+            for (int coluna = 0; coluna < COLUNAS; coluna++) {
+                double codAluno = matriz[i][coluna];
+                //double notaAluno = matriz[i][coluna];
+                System.out.print(" Aluno: " + codAluno);
+                //System.out.print(" Nota: " + notaAluno);
+            }
+            System.out.println();
         }
     }
 }

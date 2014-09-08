@@ -10,7 +10,7 @@ public class TesteExemploMatriz {
     public void testaMatriz() {
         ExemploMatriz matriz = new ExemploMatriz();
         matriz.carregarMemoria();
-        matriz.imprime();
+        matriz.imprime2();
 
     }
 }
