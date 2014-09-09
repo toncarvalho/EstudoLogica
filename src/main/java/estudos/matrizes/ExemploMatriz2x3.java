@@ -10,11 +10,6 @@ public class ExemploMatriz2x3 {
     private double[][] matriz = new double[LINHAS][COLUNAS];
 
     /**
-     * Imagine uma linha de registro( Tupla) com os campos nome, endereco e email, como conter estes dados em memoria? -> o campo nome pode
-     * contem ate 10 caracteres, o endereco 15 e o email tambem 15.
-     */
-
-    /**
      * implementacao de uma matriz que contenha alunos e notas
      */
 
@@ -50,11 +45,52 @@ public class ExemploMatriz2x3 {
             for (int j = 0; j < COLUNAS; j++) {
                 double valor = matriz[i][j];
                 if (j == 0) {
-                    System.out.print("Cod: " + valor +"\t");
+                    System.out.print("Cod: " + valor + "\t");
                 } else if (j == 1) {
-                    System.out.print("Nota: " + valor +"\t");
+                    System.out.print("Nota: " + valor + "\t");
                 } else if (j == 2) {
-                    System.out.println("Faltas: " + valor +"\t");
+                    System.out.println("Faltas: " + valor + "\t");
+                }
+            }
+        }
+    }
+
+    public void acesso3() {
+        /**
+         * descobrindo a quantidade de colunas direto da matriz
+         */
+        for (int i = 0; i < LINHAS; i++) {
+            System.out.println("linha/tupla: " + i);
+            int campos = matriz[i].length;
+
+            for (int j = 0; j < campos; j++) {
+                double valor = matriz[i][j];
+                if (j == 0) {
+                    System.out.print("Cod: " + valor + "\t");
+                } else if (j == 1) {
+                    System.out.print("Nota: " + valor + "\t");
+                } else if (j == 2) {
+                    System.out.println("Faltas: " + valor + "\t");
+                }
+            }
+        }
+    }
+
+    public void acesso4() {
+        /**
+         * descobrindo os campos e sua quantidade
+         */
+        for (int i = 0; i < LINHAS; i++) {
+            System.out.println("linha/tupla: " + i);
+            double[] campos = matriz[i];
+            for (int j = 0; j < campos.length; j++) {
+                double valor = campos[j];
+                if (j == 0) {
+                    System.out.print("Cod: " + valor + "\t");
+                } else if (j == 1) {
+                    System.out.print("Nota: " + valor + "\t");
+                } else if (j == 2) {
+                    System.out.println("Faltas: " + valor + "\t");
                 }
             }
         }

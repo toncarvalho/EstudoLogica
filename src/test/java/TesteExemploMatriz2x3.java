@@ -14,15 +14,27 @@ public class TesteExemploMatriz2x3 {
         matriz.carregarMemoria();
     }
 
-
     @Test
     public void testAcesso() {
 
         matriz.acesso1();
     }
+
     @Test
     public void testAcesso1() {
 
         matriz.acesso2();
+    }
+
+    @Test
+    public void testAcesso3() {
+
+        matriz.acesso3();
+    }
+
+    @Test
+    public void testAcesso4() {
+
+        matriz.acesso4();
     }
 }
