@@ -1,14 +1,13 @@
 package estudos.matrizes;
 
 /**
- * Uso de Arrays como tabelas de dados em memoria
+ * Uso de Arrays como tabelas de dados em memoria ( matriz quadrada )
  */
-public class ExemploMatriz {
+public class ExemploMatriz2x2 {
     private int LINHAS = 2;
     private int COLUNAS = 2;
 
     private double[][] matriz = new double[LINHAS][COLUNAS];
-
 
     /**
      * Imagine uma linha de registro( Tupla) com os campos nome, endereco e email, como conter estes dados em memoria? -> o campo nome pode
@@ -25,32 +24,28 @@ public class ExemploMatriz {
         matriz[0][0] = 1;
         //nota 89
         matriz[0][1] = 89;
+
         //aluno 2
         matriz[1][0] = 2;
         //nota 89
         matriz[1][1] = 58;
-
-
     }
 
-    public void imprime() {
+    public void acessoAMatriz() {
 
         for (int linha = 0; linha < LINHAS; linha++) {
             for (int coluna = 0; coluna < COLUNAS; coluna++) {
-                System.out.println("Aluno: " + matriz[linha][coluna]);
+                System.out.print("[" + linha + "]" + "[" + coluna + "]");
+                System.out.println("valor: " + matriz[linha][coluna]);
             }
         }
     }
 
-    public void imprime2() {
-
-        for (int i = 0; i < LINHAS; i++) {
-
+    public void acessando1LinhaNColunas() {
+        for (int linha = 0; linha < LINHAS; linha++) {
             for (int coluna = 0; coluna < COLUNAS; coluna++) {
-                double codAluno = matriz[i][coluna];
-                //double notaAluno = matriz[i][coluna];
-                System.out.print(" Aluno: " + codAluno);
-                //System.out.print(" Nota: " + notaAluno);
+                double valor = matriz[linha][coluna];
+                System.out.print(" linha: " + linha + " coluna:" + coluna + " valor: " + valor);
             }
             System.out.println();
         }
