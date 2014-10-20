@@ -1,4 +1,4 @@
-package estudos.listas;
+package estudos.listas.ligada;
 
 /**
  * Uma lista ligada ou lista encadeada é uma estrutura de dados linear e dinâmica. Ela é composta por células que apontam para o próximo

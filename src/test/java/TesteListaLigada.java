@@ -1,4 +1,4 @@
-import estudos.listas.ListaLigada;
+import estudos.listas.ligada.ListaLigada;
 import org.junit.Test;
 
 /**

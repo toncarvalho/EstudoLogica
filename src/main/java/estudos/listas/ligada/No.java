@@ -1,4 +1,4 @@
-package estudos.listas;
+package estudos.listas.ligada;
 
 /**
  * Created by ton on 9/11/14.
