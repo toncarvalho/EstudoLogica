@@ -1,3 +1,5 @@
+package matrizes;
+
 import estudos.matrizes.ExemploMatriz2x2;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,3 +1,5 @@
+package loops;
+
 import estudos.estruturasderepeticao.ExemplosRepeticoes;
 import org.junit.Test;
 

@@ -1,3 +1,5 @@
+package listas;
+
 import estudos.listas.circular.ListaCircular;
 import org.junit.Test;
 
@@ -10,5 +12,14 @@ public class TesteListaLigadaCircular {
     public void testeLista() {
         ListaCircular lista = new ListaCircular();
         lista.add("Joselito");
+        lista.add("Peter");
+        lista.add("Mano");
+        lista.add("Mimimi");
+
+        lista.exibirListaDoPrimeiroAoUltimo();
+
+        lista.exibeListaInfinito();
+
+
     }
 }

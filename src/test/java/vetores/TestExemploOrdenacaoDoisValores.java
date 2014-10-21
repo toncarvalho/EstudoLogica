@@ -1,3 +1,5 @@
+package vetores;
+
 import estudos.ordenacao.ExemploOrdenacaoSimplesDoisValores;
 import org.junit.Test;
 

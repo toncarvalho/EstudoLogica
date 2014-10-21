@@ -1,3 +1,5 @@
+package vetores;
+
 import estudos.vetores.ExemploVetor;
 import org.junit.Test;
 

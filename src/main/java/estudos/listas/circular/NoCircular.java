@@ -5,6 +5,18 @@ package estudos.listas.circular;
  */
 public class NoCircular {
     Object elemento;
-    NoCircular proximo;
+    NoCircular seguinte;
     NoCircular anterior;
+
+    public NoCircular(Object elemento, NoCircular proximo, NoCircular anterior) {
+        this.elemento = elemento;
+        this.seguinte = proximo;
+        this.anterior = anterior;
+    }
+
+    public NoCircular() {
+
+    }
+
+
 }

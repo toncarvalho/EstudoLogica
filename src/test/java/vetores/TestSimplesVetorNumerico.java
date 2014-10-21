@@ -1,3 +1,5 @@
+package vetores;
+
 import estudos.vetores.SimplesVetorNumerico;
 import org.junit.Test;
 

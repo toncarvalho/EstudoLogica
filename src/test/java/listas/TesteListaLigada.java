@@ -1,3 +1,5 @@
+package listas;
+
 import estudos.listas.ligada.ListaLigada;
 import org.junit.Test;
 
