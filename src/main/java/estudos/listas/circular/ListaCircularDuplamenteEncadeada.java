@@ -2,17 +2,17 @@ package estudos.listas.circular;
 
 /**
  * A lista circular é uma espécie de lista simplesmente ou duplamente encadeada, com uma característica adicional para o deslocamento na
- * lista, "ela não tem fim". Para tornar a lista interminável, o ponteiro seguinte do último elemento apontará para o primeiro elemento da
+ * lista, "ela não tem fim". Para tornar a lista interminável, o ponteiro proximo do último elemento apontará para o primeiro elemento da
  * lista, em vez do valor NULL, como vimos no caso das listas simplesmente e duplamente encadeadas. Nas listas circulares, nunca chegaremos
  * a uma posição a partir da qual não poderemos mais nos mover. Chegando ao último elemento, o deslocamento vai recomeçar no primeiro
  * elemento. Em suma, trata-se de uma rotação. veja mais em:  http://pt.kioskea.net/faq/10226-listas-circulares-ring-buffer
  */
-public class ListaCircular {
-    private NoCircular primeiro;
-    private NoCircular ultimo;
+public class ListaCircularDuplamenteEncadeada {
+    private Node primeiro;
+    private Node ultimo;
     private int numeroNos = 0;
 
-    public ListaCircular() {
+    public ListaCircularDuplamenteEncadeada() {
         inicializacao();
     }
 
@@ -28,7 +28,7 @@ public class ListaCircular {
     public int add(final String elemento) {
         //Alocação da memória para o novo elemento
         //Preenchimento do campo de dados do novo elemento
-        //O ponteiro seguinte do novo elemento apontará para ele mesmo (é a etapa que torna a lista circular)
+        //O ponteiro proximo do novo elemento apontará para ele mesmo (é a etapa que torna a lista circular)
 
         if (numeroNos > 0) {
             return addEmListaNaoVazia(elemento);
@@ -53,7 +53,7 @@ public class ListaCircular {
      */
     private int addEmListaVazia(String elemento) {
         try {
-            NoCircular node = new NoCircular();
+            Node node = new Node();
             node.elemento = elemento;
             this.primeiro = node;
             this.ultimo = node;
@@ -72,7 +72,7 @@ public class ListaCircular {
     /**
      * 1 - Alocação da memória para o novo elemento
      * 2 - Preenchimento do campo de dados do novo elemento
-     * 3 - O ponteiro seguinte do novo elemento aponta para o endereço do primeiro elemento (manter a lista circular)
+     * 3 - O ponteiro proximo do novo elemento aponta para o endereço do primeiro elemento (manter a lista circular)
      * 4 - O ponteiro de início não muda
      * 5 - O ponteiro de fim aponta para o novo elemento
      * 6 - O tamanho é incrementado com uma unidade
@@ -81,23 +81,23 @@ public class ListaCircular {
      * @return
      */
     private int addEmListaNaoVazia(String elemento) {
-        //o ponteiro seguinte do último elemento apontará para o primeiro elemento da lista
+        //o ponteiro proximo do último elemento apontará para o primeiro elemento da lista
 
         try {
             //1 - Alocação da memória para o novo elemento
-            NoCircular novoNo = new NoCircular();
+            Node novoNo = new Node();
             //2 - Preenchimento do campo de dados do novo elemento
             novoNo.elemento = elemento;
 
-            //O ponteiro seguinte do novo elemento aponta para o endereço do primeiro elemento (manter a lista circular)
-            novoNo.seguinte = this.primeiro;
+            //3 - O ponteiro proximo do novo elemento aponta para o endereço do primeiro elemento (manter a lista circular)
+            novoNo.proximo = this.primeiro;
 
             //4 - O ponteiro de início não muda
             //this.anterior = novoNo;
 
             //5 - O ponteiro de fim aponta para o novo elemento
-            //novoNo.anterior =
             this.ultimo = novoNo;
+
 
             //6 - O tamanho é incrementado com uma unidade
             this.numeroNos++;
@@ -113,8 +113,8 @@ public class ListaCircular {
 
     /**
      * Para exibir a lista inteira você deverá se posicionar no início da lista (isso é possível com o ponteiro de início).
-     * Em seguida, ao usar o ponteiro seguinte de cada elemento, a lista é percorrida do primeiro ao último elemento.
-     * Em comparação com as listas simples e duplamente encadeadas, onde a condição de parada é dada pela ponteiro seguinte do último elemento, que equivale a NULL para a lista circular, não há ponto de parada, a menos que você escolha um.
+     * Em seguida, ao usar o ponteiro proximo de cada elemento, a lista é percorrida do primeiro ao último elemento.
+     * Em comparação com as listas simples e duplamente encadeadas, onde a condição de parada é dada pela ponteiro proximo do último elemento, que equivale a NULL para a lista circular, não há ponto de parada, a menos que você escolha um.
      * <p/>
      * Veja duas variantes de exibição:
      * Exibição da lista (do primeiro para o último elemento)
@@ -122,13 +122,13 @@ public class ListaCircular {
      */
     public void exibirListaDoPrimeiroAoUltimo() {
 
-        NoCircular noAtual = this.primeiro;
+        Node noAtual = this.primeiro;
 
         if (this.numeroNos > 0) {
             for (int i = 0; i < this.numeroNos; i++) {
                 System.out.println(" Nó: " + i + " elemento: " + noAtual.elemento);
 
-                noAtual = noAtual.seguinte;
+                noAtual = noAtual.proximo;
             }
         }
 
@@ -138,8 +138,8 @@ public class ListaCircular {
     public void exibeListaInfinito() {
 
         while (true) {
-            NoCircular noAtual = this.primeiro;
-            System.out.println(" elemento: " + noAtual.seguinte.elemento);
+            Node noAtual = this.primeiro;
+            System.out.println(" elemento: " + noAtual.proximo.elemento);
             try {
                 Thread.sleep(1000l);
             } catch (InterruptedException e) {
