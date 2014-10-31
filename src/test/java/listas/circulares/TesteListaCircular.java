@@ -11,18 +11,7 @@ public class TesteListaCircular {
 
     @Test
     public void testeLista() {
-        /*ListaCircular lista = new ListaCircular();
-        lista.add("Joselito");
-        lista.add("Peter");
-        lista.add("Mano");
-        lista.add("Mimimi");
 
-        lista.exibirListaDoPrimeiroAoUltimo();
-
-        lista.exibeListaInfinito();
-
-
-        /*/
 
         ListaCircular lista = new ListaCircular();
 

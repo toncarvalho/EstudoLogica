@@ -24,26 +24,26 @@ public class ListaSimplesmenteEncadadeada {
 
     public void addInicio(Object element) {
         numeroNos++;
-        No novoNo = new No(element);
+        No no = new No(element);
         if (isVazia()) {
-            ultimo = novoNo;
+            ultimo = no;
         } else {
-            novoNo.proximo = primeiro;
+            no.proximo = primeiro;
         }
 
-        primeiro = novoNo;
+        primeiro = no;
     }
 
     public void addFinal(Object element) {
         numeroNos++;
-        No novoNo = new No(element);
+        No no = new No(element);
         if (isVazia()) {
-            primeiro = novoNo;
+            primeiro = no;
         } else {
-            ultimo.proximo = novoNo;
+            ultimo.proximo = no;
         }
 
-        ultimo = novoNo;
+        ultimo = no;
     }
 
     public void addMeio(Object element, int posicao) {

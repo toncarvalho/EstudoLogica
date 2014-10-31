@@ -6,9 +6,18 @@ package estudos.listas.duplamenteEncadeada;
 public class No {
     Object elemento;
     No proximo;
+    No anterior;
+
+    public No(final Object elemento, No anterior, No proximo) {
+        this.elemento = elemento;
+        this.proximo = proximo;
+        this.anterior = anterior;
+
+    }
 
     public No(final Object elemento) {
         this.elemento = elemento;
-        proximo = null;
+
+
     }
 }

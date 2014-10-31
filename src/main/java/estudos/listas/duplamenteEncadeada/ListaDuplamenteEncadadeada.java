@@ -1,14 +1,5 @@
 package estudos.listas.duplamenteEncadeada;
 
-/**
- * Uma lista simplesmenteEncadeada ou lista encadeada é uma estrutura de dados linear e dinâmica. Ela é composta por células que apontam para o próximo
- * elemento da lista. Para "ter" uma lista simplesmenteEncadeada/encadeada, basta guardar seu primeiro elemento, e seu último elemento aponta para uma
- * célula nula.
- * <p/>
- * Para inserir dados ou remover dados é necessário ter um ponteiro que aponte para o 1º elemento e outro que aponte para o fim, porque se
- * queremos inserir ou apagar dados que estão nessas posições, a operação é rapidamente executada. Caso seja necessário editar um nó que
- * esteja no meio da lista haverá uma busca pela posição desejada.
- */
 
 public class ListaDuplamenteEncadadeada {
 
