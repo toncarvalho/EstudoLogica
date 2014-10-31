@@ -1,7 +1,7 @@
-package estudos.listas.circular;
+package estudos.listas.circularDuplamenteEncadeada;
 
 /**
- * A lista circular é uma espécie de lista simplesmente ou duplamente encadeada, com uma característica adicional para o deslocamento na
+ * A lista circularDuplamenteEncadeada é uma espécie de lista simplesmente ou duplamente encadeada, com uma característica adicional para o deslocamento na
  * lista, "ela não tem fim". Para tornar a lista interminável, o ponteiro proximo do último elemento apontará para o primeiro elemento da
  * lista, em vez do valor NULL, como vimos no caso das listas simplesmente e duplamente encadeadas. Nas listas circulares, nunca chegaremos
  * a uma posição a partir da qual não poderemos mais nos mover. Chegando ao último elemento, o deslocamento vai recomeçar no primeiro
@@ -28,7 +28,7 @@ public class ListaCircularDuplamenteEncadeada {
     public int add(final String elemento) {
         //Alocação da memória para o novo elemento
         //Preenchimento do campo de dados do novo elemento
-        //O ponteiro proximo do novo elemento apontará para ele mesmo (é a etapa que torna a lista circular)
+        //O ponteiro proximo do novo elemento apontará para ele mesmo (é a etapa que torna a lista circularDuplamenteEncadeada)
 
         if (numeroNos > 0) {
             return addEmListaNaoVazia(elemento);
@@ -72,7 +72,7 @@ public class ListaCircularDuplamenteEncadeada {
     /**
      * 1 - Alocação da memória para o novo elemento
      * 2 - Preenchimento do campo de dados do novo elemento
-     * 3 - O ponteiro proximo do novo elemento aponta para o endereço do primeiro elemento (manter a lista circular)
+     * 3 - O ponteiro proximo do novo elemento aponta para o endereço do primeiro elemento (manter a lista circularDuplamenteEncadeada)
      * 4 - O ponteiro de início não muda
      * 5 - O ponteiro de fim aponta para o novo elemento
      * 6 - O tamanho é incrementado com uma unidade
@@ -89,7 +89,7 @@ public class ListaCircularDuplamenteEncadeada {
             //2 - Preenchimento do campo de dados do novo elemento
             novoNo.elemento = elemento;
 
-            //3 - O ponteiro proximo do novo elemento aponta para o endereço do primeiro elemento (manter a lista circular)
+            //3 - O ponteiro proximo do novo elemento aponta para o endereço do primeiro elemento (manter a lista circularDuplamenteEncadeada)
             novoNo.proximo = this.primeiro;
 
             //4 - O ponteiro de início não muda
@@ -114,7 +114,7 @@ public class ListaCircularDuplamenteEncadeada {
     /**
      * Para exibir a lista inteira você deverá se posicionar no início da lista (isso é possível com o ponteiro de início).
      * Em seguida, ao usar o ponteiro proximo de cada elemento, a lista é percorrida do primeiro ao último elemento.
-     * Em comparação com as listas simples e duplamente encadeadas, onde a condição de parada é dada pela ponteiro proximo do último elemento, que equivale a NULL para a lista circular, não há ponto de parada, a menos que você escolha um.
+     * Em comparação com as listas simples e duplamente encadeadas, onde a condição de parada é dada pela ponteiro proximo do último elemento, que equivale a NULL para a lista circularDuplamenteEncadeada, não há ponto de parada, a menos que você escolha um.
      * <p/>
      * Veja duas variantes de exibição:
      * Exibição da lista (do primeiro para o último elemento)

@@ -1,7 +1,7 @@
-package listas.circularDuplamenteEncadeada;
+package listas.circulares;
 
-import estudos.listas.circularDuplamenteEncadeada.ListaCircular;
-import estudos.listas.circularDuplamenteEncadeada.No;
+import estudos.listas.circular.ListaCircular;
+import estudos.listas.circular.No;
 import org.junit.Test;
 
 /**

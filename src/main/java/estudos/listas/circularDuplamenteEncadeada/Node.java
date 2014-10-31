@@ -1,4 +1,4 @@
-package estudos.listas.circular;
+package estudos.listas.circularDuplamenteEncadeada;
 
 /**
  * Created by ton on 9/15/14.

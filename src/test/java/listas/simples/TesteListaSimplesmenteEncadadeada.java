@@ -1,17 +1,17 @@
-package listas;
+package listas.simples;
 
-import estudos.listas.ligada.ListaLigada;
+import estudos.listas.simplesmenteEncadeada.ListaSimplesmenteEncadadeada;
 import org.junit.Test;
 
 /**
  * Created by ton on 9/11/14.
  */
-public class TesteListaLigada {
+public class TesteListaSimplesmenteEncadadeada {
 
     @Test
     public void testeLista() {
 
-        ListaLigada lista = new ListaLigada();
+        ListaSimplesmenteEncadadeada lista = new ListaSimplesmenteEncadadeada();
         if (lista.isVazia()) {
             System.out.println(" A lista esta vazia");
         } else {
